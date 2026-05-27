@@ -80,7 +80,7 @@ sendBtn.addEventListener('click', () => {
   }
 
   // ⚠️ REPLACE THIS WITH YOUR ACTUAL WHATSAPP NUMBER (international format, no + or spaces)
-  const whatsappNumber = '2348000000000';
+  const whatsappNumber = '2349050838065';
 
   let text = `Hello Usoktek! 👋\n\n`;
   text += `*Name:* ${name}\n`;
