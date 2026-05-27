@@ -91,52 +91,65 @@
   <div class="section-container">
     <div class="section-label">Our Leadership</div>
     <h2>The Brains Behind <span class="gradient-text">The Code</span></h2>
-    
-    <div class="team-grid team-founders team-cofounders">
+
+    <div class="team-grid team-cofounders">
+
+      <!-- Samuel — Founder -->
       <div class="team-card founder-card">
-        <div class="founder-crown">👑 Founder</div>
-        <div class="team-avatar" style="background: var(--sky-dark);">S</div>
+        <div class="founder-crown founder-only">👑 Founder</div>
+        <div class="team-avatar-photo">
+          <img src="images/sam.jpeg" alt="Samuel" onerror="this.parentElement.innerHTML='<span>S</span>'"/>
+        </div>
         <h4>Samuel</h4>
         <span class="team-role">Chief Executive Officer</span>
         <p>Leading the technical vision and architectural scale of all engineered products.</p>
       </div>
+
+      <!-- Genesis — Co-Founder -->
       <div class="team-card founder-card">
         <div class="founder-crown">🚀 Co-Founder</div>
-        <div class="team-avatar" style="background: var(--black);">G</div>
+        <div class="team-avatar-photo">
+          <img src="images/genesis.jpeg" alt="Genesis" onerror="this.parentElement.innerHTML='<span>G</span>'"/>
+        </div>
         <h4>Genesis</h4>
         <span class="team-role">Chief Technology Officer</span>
         <p>Managing execution strategies, operations, and agile development pipelines.</p>
       </div>
+
+      <!-- Michael — Co-Founder -->
       <div class="team-card founder-card">
         <div class="founder-crown">🚀 Co-Founder</div>
-        <div class="team-avatar" style="background: var(--black);">B</div>
+        <div class="team-avatar-photo">
+          <img src="images/micheal.jpeg" alt="Michael" onerror="this.parentElement.innerHTML='<span>M</span>'"/>
+        </div>
+        <h4>Michael</h4>
+        <span class="team-role">Co-Founder &amp; Robotics Engineer</span>
+        <p>Passionate about autonomous systems and empowering students with hands-on engineering skills.</p>
+      </div>
+
+      <!-- Bamaiyi — Co-Founder -->
+      <div class="team-card founder-card">
+        <div class="founder-crown">🚀 Co-Founder</div>
+        <div class="team-avatar-photo">
+          <img src="images/bams.jpeg" alt="Bamaiyi" onerror="this.parentElement.innerHTML='<span>B</span>'"/>
+        </div>
         <h4>Bamaiyi</h4>
-        <span class="team-role">Co-Founder</span>
+        <span class="team-role">Co-Founder &amp; Marketing &amp; Sales</span>
         <p>Directing collaborative growth frameworks and strategic technological integrations.</p>
       </div>
-      <div class="team-card founder-card">
-        <div class="founder-crown">🚀 Co-Founder</div>
-        <div class="team-avatar" style="background: var(--black);">F4</div>
-        <h4>Founder 4</h4>
-        <span class="team-role">Executive Role Here</span>
-        <p>Description placeholder text. You can replace this section text with your teammate's info.</p>
-      </div>
-      <div class="team-card founder-card">
-        <div class="founder-crown">🚀 Co-Founder</div>
-        <div class="team-avatar" style="background: var(--black);">F5</div>
-        <h4>Founder 5</h4>
-        <span class="team-role">Executive Role Here</span>
-        <p>Description placeholder text. You can replace this section text with your teammate's info.</p>
-      </div>
-      <div class="team-card founder-card">
-        <div class="founder-crown">🚀 Co-Founder</div>
-        <div class="team-avatar" style="background: var(--black);">F6</div>
-        <h4>Founder 6</h4>
-        <span class="team-role">Executive Role Here</span>
-        <p>Description placeholder text. You can replace this section text with your teammate's info.</p>
-      </div>
-    </div>
 
+      <!-- Shinelle — Co-Founder -->
+      <div class="team-card founder-card">
+        <div class="founder-crown">🚀 Co-Founder</div>
+        <div class="team-avatar-photo">
+          <img src="images/shinelle.jpeg" alt="Shinelle" onerror="this.parentElement.innerHTML='<span>S</span>'"/>
+        </div>
+        <h4>Shinelle</h4>
+        <span class="team-role">Co-Founder &amp; Marketing &amp; Sales</span>
+        <p>Expert in creating, communicating, and delivering value to customers.</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -151,7 +164,7 @@
         <h5>Company</h5>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="#services">Services</a>
+        <a href="index.html#services">Services</a>
       </div>
       <div class="footer-col">
         <h5>Office Location</h5>
@@ -167,6 +180,49 @@
     <p>© 2026 USOTEK. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="closeModal">✕</button>
+    <div class="modal-header">
+      <div class="modal-icon">💬</div>
+      <h3>Let's Talk</h3>
+      <p>Fill in your details and we'll take the conversation to WhatsApp.</p>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="contactName" placeholder="e.g. John Doe"/>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="contactEmail" placeholder="john@example.com"/>
+      </div>
+      <div class="form-group">
+        <label>What do you need help with?</label>
+        <select id="contactService">
+          <option value="">Select a service...</option>
+          <option>Web Development</option>
+          <option>Robotics</option>
+          <option>Marketing &amp; Sales</option>
+          <option>Tech Gadgets</option>
+          <option>Mobile App Development</option>
+          <option>Custom Software &amp; Consulting</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Brief Description</label>
+        <textarea id="contactMessage" rows="4" placeholder="Tell us a little about your project or idea..."></textarea>
+      </div>
+      <button class="btn-whatsapp" id="sendToWhatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Send via WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
 
 <script src="main.js"></script>
 </body>
